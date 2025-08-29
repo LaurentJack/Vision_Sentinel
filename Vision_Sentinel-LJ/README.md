@@ -1,4 +1,4 @@
-# Vision Sentinel v2.3 — Reconnaissance faciale fiable + réglage du seuil
+# Vision Sentinel Par Laurent Jacquemyns — Reconnaissance faciale fiable + réglage du seuil
 - **Seuil de similarité** (cosine) **réglable** dans l'UI (0.20–0.80). Par défaut **0.35**.
 - **Affichage de la similarité** à côté du nom (toggle dans `config.yaml`).
 - Boutons **Recharger galerie** et **Capturer x10** pour des gabarits plus robustes.
