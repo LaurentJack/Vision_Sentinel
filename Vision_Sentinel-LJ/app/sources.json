@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Cam 1",
+    "source": "0"
+  },
+  {
+    "name": "Entrée RTSP",
+    "source": "http://192.168.0.90/mjpg/video.mjpg"
+  },
+  {
+    "name": "Cam2",
+    "source": "http://159.130.70.206/mjpg/video.mjpg"
+  },
+  {
+    "name": "flux3",
+    "source": "http://83.48.75.113:8320/axis-cgi/mjpg/video.cgi"
+  },
+  {
+    "name": "flux4",
+    "source": "http://46.14.58.189/mjpg/video.mjpg"
+  },
+  {
+    "name": "flux5",
+    "source": "http://webcam.zvnoordwijk.nl:82/mjpg/video.mjpg"
+  }
+]

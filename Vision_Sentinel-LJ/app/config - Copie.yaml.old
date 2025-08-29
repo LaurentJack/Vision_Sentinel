@@ -1,0 +1,59 @@
+video:
+  source: 0
+  width: 1280
+  height: 720
+  inference_every_n_frames: 1
+yolo:
+  model: yolov8s.pt
+  conf_threshold: 0.35
+  iou_threshold: 0.5
+  classes_of_interest:
+  - person
+  - backpack
+  - handbag
+  - suitcase
+  - tie
+  - umbrella
+  - boat
+  - gun
+  - car
+  - weapon
+  - backpack
+  - chair
+  - cell phone
+  - book
+  - scissors
+  - Bicycle
+  - Goggles
+  - Glasses
+  - Jeans
+  - Shotgun
+  - Skirt
+  - Suit
+  - Sunglasses
+  - Wheel
+  - cat
+  - dog
+  - pliers
+  - bench
+  - trash can
+  - fountain
+  - water
+  - street lamp
+  - scooter
+face:
+  provider: gpu
+  model_name: buffalo_l
+  recognize_every_n_frames: 0
+  match_threshold: 0.3
+  similarity_threshold: 0.36
+zones: []
+lines: []
+drawing:
+  show_fps: true
+  blur_unknown_faces: true
+  show_objects: true
+  show_face_similarity: true
+  show_colors: true
+logging:
+  csv_path: app/data/events.csv

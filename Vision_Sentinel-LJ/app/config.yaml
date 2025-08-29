@@ -1,0 +1,76 @@
+video:
+  source: 0
+  width: 1920
+  height: 1080
+  inference_every_n_frames: 1
+yolo:
+  model: yolo11n.pt
+  pose_model: yolov8n-pose.pt
+  pose_every_n_frames: 1
+  conf_threshold: 0.35
+  iou_threshold: 0.5
+  classes_of_interest:
+  - person
+  - backpack
+  - handbag
+  - suitcase
+  - tie
+  - umbrella
+  - boat
+  - car
+  - cell phone
+  - scissors
+  - Bicycle
+  - truck
+weapons:
+  enabled: true
+  model: app/resources/best.pt
+  conf_threshold: 0.5
+  iou_threshold: 0.5
+  class_aliases:
+    gun: handgun
+    pistol: handgun
+    revolver: handgun
+    firearm: handgun
+    rifle: long_gun
+    ar15: long_gun
+    assault_rifle: long_gun
+    shotgun: long_gun
+    knife: knife
+    dagger: knife
+    machete: knife
+face:
+  provider: gpu
+  model_name: buffalo_l
+  recognize_every_n_frames: 0
+  match_threshold: 0.3
+  similarity_threshold: 0.36
+zones:
+- name: Zone 1
+  polygon:
+  - - 854
+    - 86
+  - - 846
+    - 287
+  - - 1113
+    - 305
+  - - 1171
+    - 81
+lines:
+- name: Ligne 1
+  p1:
+  - 678
+  - 387
+  p2:
+  - 1201
+  - 417
+drawing:
+  show_fps: true
+  blur_unknown_faces: true
+  show_objects: true
+  show_face_similarity: true
+  show_colors: true
+  show_skeleton: true
+  weapon_persist_frames: 8
+logging:
+  csv_path: app/data/events.csv
